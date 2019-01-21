@@ -1,0 +1,28 @@
+public class Food
+{
+    public virtual void Serve()
+    {
+        Console.WriteLine("Food to be served");
+    }
+}
+
+public class Pizza:Food
+{
+    public override void Serve()
+    {
+        base.serve();
+        Console.Writeline("Pizza to be served");
+    }
+
+    public void Ingredient()
+    {
+        Console.Writeline("chicken pizza!!");
+    }
+}
+
+static void Main(string[] args)  
+    { 
+	Food fd = new Food();
+      	fd.serve();
+	fd.Ingredient();
+}
